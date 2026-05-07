@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokam Sweets & Snacks | Authentic Indian Flavors Since 1949</title>
+    <meta name="description" content="Discover the legendary taste of Kokam Sweets. Famous for Samosas, Kachoris, and premium Mithai since 1949 in Morena. Order online via Swiggy.">
+    <link rel="icon" type="image/png" href="Orange and White Traditional Elegant Indian Sweets Instagram Post.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    
+    <div class="announcement-bar">
+        <p>✨ Enjoy fast & fresh delivery in Morena (3-6 km) | 🚚 PAN India Delivery (4-6 days) ✨</p>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="Orange and White Traditional Elegant Indian Sweets Instagram Post.png" alt="Kokam Sweets">
+                </a>
+
+                <button class="mobile-menu-btn" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="nav" id="nav">
+                    <button class="nav-close" onclick="toggleMenu()">&times;</button>
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link active">Shop All</a></li>
+                        <li><a href="sweets.html" class="nav-link">Sweets</a></li>
+                        <li><a href="namkeen.html" class="nav-link">Namkeen</a></li>
+                        <li><a href="cookies.html" class="nav-link">Cookies</a></li>
+                        <li><a href="dryfruits.html" class="nav-link">Dry Fruits</a></li>
+                        <li><a href="mathi.html" class="nav-link">Mathi</a></li>
+                        <li><a href="snacks.html" class="nav-link">Fresh Snacks</a></li>
+                        <li><a href="#bulk" class="nav-link">Bulk Orders</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-overlay" onclick="toggleMenu()"></div>
+
+                <div class="header-actions">
+                    <button class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.3-4.3"></path>
+                        </svg>
+                    </button>
+                    <a href="https://www.swiggy.com/city/morena/kokam-sweets-jiwaji-ganj-rest1134304" class="btn-primary" style="padding: 8px 15px; font-size: 12px;">Order on Swiggy</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <img src="banner1.png" alt="Savor the Sweetness of Tradition">
+                <div class="hero-content">
+                    <h1>Savor the Sweetness<br>of Tradition</h1>
+                    <p>Celebrate Every Moment with Authentic Indian Mithai</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="delivery-options">
+        <div class="container">
+            <div class="delivery-grid">
+                <div class="delivery-card">
+                    <h3>Hyperlocal Delivery</h3>
+                    <p>Craving sweets nearby?<br>Get fresh delivery from our outlets within 3-6 km in Morena.</p>
+                </div>
+                <div class="delivery-card">
+                    <h3>PAN India Delivery</h3>
+                    <p>Sending love across India?<br>Explore our PAN India menu and get sweets delivered to your city.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories reveal">
+        <div class="container">
+            <h2 class="section-title">Shop By Range</h2>
+            <p class="section-subtitle">Each piece reflects quality and authentic flavors.</p>
+            <div class="category-grid">
+                <a href="sweets.html" class="category-card">
+                    <img src="sweets.jpeg"
+                        alt="Sweets">
+                    <h3>Sweets</h3>
+                </a>
+                <a href="namkeen.html" class="category-card">
+                    <img src="namkeen.jpeg"
+                        alt="Namkeen">
+                    <h3>Namkeen</h3>
+                </a>
+                <a href="cookies.html" class="category-card">
+                    <img src="cookies.jpeg"
+                        alt="Cookies">
+                    <h3>Cookies</h3>
+                </a>
+                <a href="dryfruits.html" class="category-card">
+                    <img src="dryfruits.jpeg"
+                        alt="Dryfruits">
+                    <h3>Dryfruits</h3>
+                </a>
+                 <a href="mathi.html" class="category-card">
+                    <img src="sweets.jpeg"
+                        alt="Mathi">
+                    <h3>Mathi</h3>
+                </a>
+                <a href="snacks.html" class="category-card">
+                    <img src="signature_snacks_samosa_kachori_1778183928859.png"
+                        alt="Samosa, Kachori & Bedai">
+                    <h3>Samosa, Kachori & Bedai</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bestsellers reveal" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Bestsellers</h2>
+            <div class="product-tabs">
+                <button class="tab-btn active" data-category="sweets">Sweets</button>
+                <button class="tab-btn" data-category="namkeen">Namkeens</button>
+                <button class="tab-btn" data-category="cookies">Cookies</button>
+                <button class="tab-btn" data-category="dryfruits">Dry Fruits</button>
+                <button class="tab-btn" data-category="mathi">Mathi</button>
+                <button class="tab-btn" data-category="snacks">Fresh Snacks</button>
+                        <div class="product-grid">
+                <div class="product-card" data-category="sweets">
+                    <div class="product-image">
+                        <img src="sweets.jpeg" alt="Kaju Katli">
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Kaju Katli</h3>
+                        <p class="product-desc">Pure cashew nut fudge, thinly sliced and topped with silver vark.</p>
+                        <button class="add-to-cart">Order on Swiggy</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="sweets">
+                    <div class="product-image">
+                        <img src="sweets.jpeg" alt="Gulab Jamun">
+                    </div>
+                    <div class="product-info">
+                        <h3>Special Gulab Jamun</h3>
+                        <p class="product-desc">Soft, milk-solid balls dipped in rose-scented sugar syrup.</p>
+                        <button class="add-to-cart">Order on Swiggy</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="namkeen">
+                    <div class="product-image">
+                        <img src="namkeen.jpeg" alt="Aloo Bhujia">
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Aloo Bhujia</h3>
+                        <p class="product-desc">Crispy potato noodles seasoned with a blend of traditional spices.</p>
+                        <button class="add-to-cart">Order on Swiggy</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cookies">
+                    <div class="product-image">
+                        <img src="cookies.jpeg" alt="Jeera Cookies">
+                    </div>
+                    <div class="product-info">
+                        <h3>Shahi Jeera Cookies</h3>
+                        <p class="product-desc">Savory cookies flavored with roasted cumin seeds. Perfect with tea.</p>
+                        <button class="add-to-cart">Order on Swiggy</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="dryfruits">
+                    <div class="product-image">
+                        <img src="dryfruits.jpeg" alt="California Almonds">
+                    </div>
+                    <div class="product-info">
+                        <h3>California Almonds</h3>
+                        <p class="product-desc">Premium quality, large-sized almonds packed with nutrition.</p>
+                        <button class="add-to-cart">Order on Swiggy</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="mathi">
+                    <div class="product-image">
+                        <img src="sweets.jpeg" alt="Masala Mathi">
+                    </div>
+                    <div class="product-info">
+                        <h3>Namkeen Masala Mathi</h3>
+                        <p class="product-desc">Traditional flaky snack with a hint of black pepper and ajwain.</p>
+                        <button class="add-to-cart">Order on Swiggy</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="snacks">
+                    <div class="product-image">
+                        <img src="signature_snacks_samosa_kachori_1778183928859.png" alt="Special Samosa">
+                    </div>
+                    <div class="product-info">
+                        <h3>Special Aloo Samosa</h3>
+                        <p class="product-desc">Crispy golden pastry filled with a perfectly spiced potato and pea mixture.</p>
+                        <button class="add-to-cart">Order on Swiggy</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="sweets">
+                    <div class="product-image">
+                        <img src="sweets.jpeg" alt="Milk Cake">
+                    </div>
+                    <div class="product-info">
+                        <h3>Alwar Famous Milk Cake</h3>
+                        <p class="product-desc">Traditional grainy milk fudge with a rich, caramelized heart.</p>
+                        <button class="add-to-cart">Order on Swiggy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="signature-snacks reveal">
+        <div class="container">
+            <div class="snacks-content">
+                <div class="snacks-image">
+                    <img src="signature_snacks_samosa_kachori_1778183928859.png" alt="Our Famous Snacks">
+                </div>
+                <div class="snacks-text">
+                    <h2 class="section-title" style="text-align: left;">Our Famous Morning Snacks</h2>
+                    <p>It all started here! Our legendary Samosas, Kachoris, and Bedai have been the heartbeat of Morena since 1949. Handcrafted every morning with our secret spice blend and served hot.</p>
+                    <ul class="snacks-list">
+                        <li><strong>Special Samosa:</strong> Crispy pastry with spicy potato filling.</li>
+                        <li><strong>Khasta Kachori:</strong> Flaky crust with savory dal masala.</li>
+                        <li><strong>Bedai with Aloo Sabzi:</strong> A traditional breakfast favorite.</li>
+                    </ul>
+                    <a href="snacks.html" class="btn-primary">View Morning Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials reveal">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Real stories from our beloved sweet lovers.</p>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <img src="customer_testimonial_1_1778184072476.png" alt="Customer" class="testimonial-img">
+                    <div class="testimonial-text">
+                        <p>"The Samosas take me back to my childhood. The same authentic taste after all these years!"</p>
+                        <div class="testimonial-author">Mrs. Sharma, Morena</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="customer_testimonial_2_1778184093010.png" alt="Customer" class="testimonial-img">
+                    <div class="testimonial-text">
+                        <p>"Best place for morning breakfast. The Bedai and Sabzi are absolutely world-class!"</p>
+                        <div class="testimonial-author">Rahul & Priya, Gwalior</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features reveal">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="Anil ji.jpeg"
+                        alt="Anil Ji">
+                    <h4>Anil Ji</h4>
+                </div>
+                <div class="feature-card">
+                    <img src="Shri Kokam ji.png"
+                        alt="Late Shri Kokam Ji Since 1949">
+                    <h4>Late Shri Kokam Ji Since 1949</h4>
+                </div>
+                <div class="feature-card">
+                    <img src="Gautam.jpeg"
+                        alt="Gautam">
+                    <h4>Gautam</h4>
+                </div>
+                <div class="feature-card">
+                    <img src="https://kokamsweets.in/cdn/shop/files/ISO_f9e74dfe-006e-4167-ba6a-396f7e85475b.svg"
+                        alt="ISO Certified">
+                    <h4>ISO Certified</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bulk-orders reveal" id="bulk">
+        <div class="container">
+            <div class="bulk-content">
+                <div class="bulk-text">
+                    <h2 class="section-title" style="text-align: left;">Bulk Orders & Gifting</h2>
+                    <p>Celebrate your special moments with Kokam Sweets. We specialize in bulk orders for weddings, corporate gifting, and large family celebrations. Premium packaging and customized hampers available.</p>
+                    <div class="bulk-features">
+                        <div class="bulk-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            <span>Wedding Favors</span>
+                        </div>
+                        <div class="bulk-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                            <span>Corporate Gifting</span>
+                        </div>
+                        <div class="bulk-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 11 4-7"></path><path d="m19 11-4-7"></path><path d="M2 11h20"></path><path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"></path><path d="m9 11 1 9"></path><path d="m15 11-1 9"></path></svg>
+                            <span>Custom Hampers</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/919876543210?text=Hello,%20I%20am%20interested%20in%20placing%20a%20bulk%20order%20for%20an%20event." class="btn-primary" style="background-color: #25d366; border-color: #25d366;">Order Bulk on WhatsApp</a>
+                </div>
+                <div class="bulk-image">
+                    <img src="bulk_gifting_sweets_1778184535488.png" alt="Bulk Gifting Sweets">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="outlets reveal">
+        <div class="container">
+            <h2 class="section-title">Shops in Morena</h2>
+            <p class="section-subtitle">Visit our stores in Morena for the finest Indian sweets.</p>
+            <div class="outlets-grid">
+                <div class="outlet-card">
+                    <img src="jahar singh mark.png"
+                        alt="Jahar Singh Marg">
+                    <h4>Jahar Singh Marg, Morena</h4>
+                </div>
+                <div class="outlet-card">
+                    <img src="banner1.png"
+                        alt="Maal Godam Road">
+                    <h4>Maal Godam Road, Morena</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe To Our Letter</h2>
+            <p>Summer flavors & giving back! Try our new treats & support a local charity - every purchase counts.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="Orange and White Traditional Elegant Indian Sweets Instagram Post.png" alt="Kokam Sweets"
+                        class="footer-logo">
+                    <p class="footer-tagline">You Can Trust Us</p>
+                    <p class="footer-desc">Clean, Authentic & Sustainable</p>
+                    <div class="social-links">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                                </path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="sweets.html">Sweets</a></li>
+                        <li><a href="namkeen.html">Namkeen</a></li>
+                        <li><a href="cookies.html">Cookies</a></li>
+                        <li><a href="dryfruits.html">Dry Fruits</a></li>
+                        <li><a href="mathi.html">Mathi</a></li>
+                        <li><a href="snacks.html">Fresh Snacks</a></li>
+                        <li><a href="#bulk">Bulk Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms And Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <p class="timing">Timing : 7:00 AM to 10:30 PM</p>
+                    <a href="mailto:care@kokamsweets.in" class="email">care@kokamsweets.in</a>
+                    <div class="payment-methods">
+                        <img src="https://kokamsweets.in/cdn/shop/files/Frame_26.svg?v=1748255519&width=360"
+                            alt="Payment Methods">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Copyright. Kokam Sweets & Snacks. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.888 11.888-11.888 3.176 0 6.161 1.237 8.404 3.48s3.481 5.229 3.481 8.406c0 6.556-5.332 11.888-11.888 11.888-2.01 0-3.986-.51-5.744-1.472l-6.24 1.695zm6.386-4.74l.356.211c1.545.918 3.327 1.402 5.158 1.402 5.513 0 10-4.487 10-10 0-2.671-1.04-5.181-2.929-7.07-1.888-1.889-4.399-2.93-7.071-2.93-5.513 0-10 4.487-10 10 0 1.764.463 3.486 1.339 5.01l.232.406-1.012 3.693 3.791-1.026zm11.033-5.513c-.274-.137-1.62-.8-1.871-.892-.251-.092-.434-.137-.617.137-.183.274-.708.892-.868 1.074-.16.183-.32.206-.594.069-.274-.137-1.157-.426-2.204-1.36-1.047-.933-1.047-.933-1.047-.933.001-.001-.001 0 0 0-.215-.224-.461-.555-.54-.693-.079-.138-.009-.212.06-.281.062-.062.137-.16.206-.24.069-.079.092-.137.137-.229.046-.092.023-.172-.011-.24-.034-.069-.32-.777-.439-1.063-.116-.279-.234-.241-.32-.241-.082-.001-.177-.001-.272-.001-.095 0-.248.036-.378.177-.13.142-.495.484-.495 1.18 0 .696.505 1.368.574 1.46.069.092.994 1.518 2.41 2.129.337.145.599.231.803.296.338.107.646.091.889.056.272-.04.836-.342 1.031-.696.194-.354.194-.657.137-.696-.057-.04-.206-.114-.48-.251z"/></svg>
+    </a>
+
+    <button id="backToTop" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
