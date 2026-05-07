@@ -1202,8 +1202,8 @@ button {
         gap: 15px;
     }
 
-    .nav-toggle {
-        display: block;
+    .mobile-menu-btn {
+        display: flex;
     }
 
     .nav {
@@ -1303,6 +1303,19 @@ button {
         padding: 10px 20px;
         font-size: 14px;
     }
-}
+
+    .header-content {
+        height: auto;
+        padding: 15px 0;
+        gap: 10px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .header-actions .btn-primary {
+        padding: 6px 12px;
+        font-size: 11px;
     }
 }
