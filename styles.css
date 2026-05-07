@@ -1204,6 +1204,20 @@ button {
 
     .mobile-menu-btn {
         display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .mobile-menu-btn span {
+        width: 25px;
+        height: 2px;
+        background-color: var(--primary-color);
+        display: block;
+        transition: var(--transition);
     }
 
     .nav {
@@ -1233,7 +1247,7 @@ button {
     }
 
     .nav-overlay {
-        display: block;
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
@@ -1241,6 +1255,10 @@ button {
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 1000;
+    }
+
+    .nav-overlay.active {
+        display: block;
     }
 
     .bulk-content, .snacks-content {

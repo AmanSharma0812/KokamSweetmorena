@@ -1,8 +1,13 @@
 function toggleMenu() {
     const nav = document.getElementById('nav');
     const overlay = document.querySelector('.nav-overlay');
+    if (!nav || !overlay) return;
+    
     nav.classList.toggle('active');
     overlay.classList.toggle('active');
+    
+    // Prevent body scroll when menu is open
+    document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
